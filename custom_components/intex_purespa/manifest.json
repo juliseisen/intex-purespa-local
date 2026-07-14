@@ -1,0 +1,14 @@
+{
+  "domain": "intex_purespa",
+  "name": "Intex PureSpa (Tuya Local)",
+  "codeowners": ["@juliseisen"],
+  "config_flow": true,
+  "documentation": "https://github.com/juliseisen/intex-purespa-local",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/juliseisen/intex-purespa-local/issues",
+  "requirements": [
+    "tinytuya>=1.15.1"
+  ],
+  "version": "1.2.0"
+}
