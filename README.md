@@ -27,7 +27,7 @@ Entitäten:
 Das Tuya-Lokalprotokoll ist verschlüsselt. Dafür braucht man den **Local Key** des
 Geräts. Den bekommt man einmalig über die Tuya-Entwicklerplattform (kostenlos):
 
-1. Der Spa muss in der **Smart Life**-App (oder „Intex Link") eingebunden sein.
+1. Der Spa muss in der **Smart Life**-App eingebunden sein.
 2. Auf https://iot.tuya.com ein kostenloses Konto anlegen (Registrierung als
    „Skill Development" / Individual reicht).
 3. **Cloud → Development → Create Cloud Project**.
