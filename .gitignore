@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+tools/package.json
+tools/package-lock.json
+ANLEITUNG-GITHUB.md
