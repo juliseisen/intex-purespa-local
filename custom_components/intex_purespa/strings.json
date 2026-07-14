@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "The spa is not reachable at this address (TCP port 6668). Check the IP address and make sure the spa is connected to your wifi.",
+            "invalid_key": "The spa is reachable but rejects the request. Check the Device ID and Local Key. Note: the Local Key changes every time the spa is re-paired with the app.",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "description": "Local control of a Tuya-based Intex PureSpa ('TY' control panel). You need the Device ID and Local Key from the Tuya IoT platform, see the README.",
+                "data": {
+                    "name": "Name",
+                    "host": "IP address of the spa",
+                    "device_id": "Device ID",
+                    "local_key": "Local Key",
+                    "protocol_version": "Tuya protocol version"
+                }
+            }
+        }
+    }
+}
