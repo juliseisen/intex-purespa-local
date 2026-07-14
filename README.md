@@ -115,3 +115,30 @@ node test-connection.cjs <IP> <DEVICE_ID> <LOCAL_KEY>
 ```
 
 Das Skript probiert alle Protokollversionen durch und gibt die Datenpunkte des Spa aus.
+
+## Danksagung & Quellen
+
+Diese Integration wurde eigenständig geschrieben, orientiert sich beim Aufbau
+und Protokoll aber an folgenden Open-Source-Projekten. Vielen Dank an deren
+Autoren:
+
+- **[jasonacox/tinytuya](https://github.com/jasonacox/tinytuya)** — Python-Bibliothek
+  für das lokale Tuya-Protokoll. Sie übernimmt Verschlüsselung, `DP_QUERY`,
+  `CONTROL`, Heartbeat und den Sitzungs-Handshake (Protokoll 3.1–3.5) und ist die
+  Laufzeit-Abhängigkeit dieser Integration.
+- **[make-all/tuya-local](https://github.com/make-all/tuya-local)** — Quelle der
+  **Datenpunkt-Zuordnung** für das Intex-Modell (Produkt `chsaskllmust5d7a`):
+  welche DP-Nummer Power, Heizung, Filter, Bubbles, Soll-/Ist-Temperatur usw.
+  entspricht (DP 103–114).
+- **[mathieu-mp/homeassistant-intex-spa](https://github.com/mathieu-mp/homeassistant-intex-spa)**
+  — die ursprüngliche Home-Assistant-Integration für Intex PureSpa (über das
+  Intex-„Link"-Protokoll). Sie diente als Vorbild für die Entitäts-Struktur
+  (Climate + Schalter + Sensoren) und den Gesamtansatz, auch wenn dieses Gerät
+  Tuya statt „Link" spricht.
+- **[rospogrigio/localtuya](https://github.com/rospogrigio/localtuya)** (LocalTuya)
+  — Referenz für den Umgang mit dauerhaften lokalen Tuya-Verbindungen; als
+  parallel nutzbare Integration in den Hinweisen erwähnt.
+
+## Lizenz
+
+[MIT](LICENSE)
